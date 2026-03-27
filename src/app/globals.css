@@ -2246,3 +2246,91 @@ main {
   flex-wrap: wrap;
   gap: 10px;
 }
+
+/* ── Portal PWA install banner ── */
+
+.portal-install-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(215, 255, 47, 0.22);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(135deg, rgba(215, 255, 47, 0.08), rgba(215, 255, 47, 0.02)),
+    var(--bg-panel);
+  backdrop-filter: blur(18px);
+  animation: portal-banner-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes portal-banner-glow {
+  0% {
+    box-shadow: 0 0 0 rgba(215, 255, 47, 0);
+  }
+  100% {
+    box-shadow: 0 0 28px rgba(215, 255, 47, 0.08);
+  }
+}
+
+.portal-install-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.portal-install-copy strong {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.portal-install-copy span {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.portal-install-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.portal-install-button {
+  white-space: nowrap;
+}
+
+.portal-install-hint {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .portal-install-banner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .portal-install-actions {
+    flex-direction: column;
+  }
+}
+
+/* ── Portal standalone mode ── */
+
+@media (display-mode: standalone) {
+  body[data-app-mode="standalone"] .portal-shell {
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+
+  body[data-app-mode="standalone"] .portal-install-banner {
+    display: none;
+  }
+}
