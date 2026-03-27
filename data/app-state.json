@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "settings": {
+    "calendarDays": 10,
+    "slotCapacity": 1,
+    "contactPhone": "(701) 833-4375",
+    "homeBase": "Minot, North Dakota",
+    "territory": "Serving Minot, western and central North Dakota jobs"
+  },
+  "bookings": [],
+  "leads": [],
+  "scheduleOverrides": [
+    {
+      "date": "2026-03-13",
+      "updatedAt": "2026-03-12T19:20:33.666Z",
+      "slots": {
+        "midday": {
+          "status": "limited",
+          "note": "Crew overlap window. Call if timing is tight."
+        }
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "updatedAt": "2026-03-12T19:20:33.666Z",
+      "slots": {
+        "afternoon": {
+          "status": "full",
+          "note": "Afternoon already committed on the current schedule."
+        }
+      }
+    }
+  ]
+}
