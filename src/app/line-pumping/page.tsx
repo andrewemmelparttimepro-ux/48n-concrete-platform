@@ -238,12 +238,12 @@ export default async function LinePumpingPage() {
 
         <aside className="hero-summary hero-media-card">
           <Image
-            alt="48 North Concrete branding on in-house pumping equipment"
+            alt="48 North Concrete line pump on a residential job in Minot, North Dakota"
             className="hero-media-image"
             height={900}
             priority
             sizes="(max-width: 980px) 100vw, 40vw"
-            src="/media/line-pump-branding.webp"
+            src="/media/line-pump-hero.jpg"
             width={1200}
           />
 
