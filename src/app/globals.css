@@ -446,25 +446,25 @@ main {
     linear-gradient(180deg, rgba(215, 255, 47, 0.98), rgba(194, 255, 0, 0.9)),
     rgba(245, 241, 233, 0.02);
   color: var(--accent-ink);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-stat-action:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 32px rgba(215, 255, 47, 0.18),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-stat-action:active {
+  transform: translateY(-2px);
 }
 
 .hero-stat-action strong,
 .hero-stat-action span {
   color: inherit;
-}
-
-.hero-stat-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  width: 100%;
-  margin-top: 4px;
-  padding: 0 18px;
-  border-radius: 999px;
-  background: rgba(11, 10, 10, 0.94);
-  color: var(--accent);
-  font-weight: 700;
 }
 
 .summary-card h2,

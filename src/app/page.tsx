@@ -230,14 +230,11 @@ export default async function Home() {
               <strong>Specialty</strong>
               <span>ICF, decorative, winter, and access-sensitive pours with the line pump ready when it fits.</span>
             </div>
-            <div className="hero-stat hero-stat-action">
+            <Link className="hero-stat hero-stat-action" href="/book">
               <p className="hero-stat-kicker">Need line pumping?</p>
               <strong>Book the Pump</strong>
               <span>Planned pours can go straight into the quick-book flow without chasing a callback.</span>
-              <Link className="hero-stat-button" href="/book">
-                Book the Pump
-              </Link>
-            </div>
+            </Link>
           </div>
         </aside>
       </section>
